@@ -40,7 +40,7 @@ nav ul {
   display: flex; 
   list-style: none; 
   flex-wrap: wrap; /* ✅ que los links bajen de línea si no caben */
-  gap: 10px;
+  gap: 15px;
 }
 
 nav li {
@@ -174,24 +174,28 @@ aside h3 {
   }
 }
 
-/* 📱 Celulares pequeños */
-@media (max-width: 480px) {
-  .logo img {
-    width: 40px;
-    height: 40px;
+
+/* 📱 En móviles, el menú se vuelve vertical */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: flex-start;
+    background: #54afb2;
+    width: 100%;
+    padding: 10px;
+    gap: 8px;
   }
 
-  .logo h1 {
-    font-size: 1rem;
+  nav li {
+    margin: 0;
   }
 
   nav a {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-  }
-
-  article {
-    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
   }
 }
+
 
