@@ -158,4 +158,8 @@
       .container {
           width: 100%;
       }  
+
+       .header-content {
+               width: 100%; 
+       }
 }
