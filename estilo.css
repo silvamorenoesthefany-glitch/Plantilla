@@ -49,8 +49,9 @@ header {
 
 nav ul {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -64,7 +65,7 @@ main {
   grid-template-columns: 2fr 1fr;
   gap: 30px;
   margin: 30px 0;
-  padding-top: 120px; /* evita que el header tape contenido */
+  padding-top: 140px; 
 }
 
 article img {
@@ -73,7 +74,7 @@ article img {
   object-fit: cover;
 }
 
-/* 📱 Tablets */
+/*tablets*/
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
@@ -81,10 +82,11 @@ article img {
 
   nav a {
     font-size: 0.85rem;
+     padding: 4px;
   }
 }
 
-/* 📱 Celulares */
+/* celulares*/
 @media (max-width: 480px) {
   .logo img {
     width: 40px;
@@ -97,10 +99,16 @@ article img {
 
   nav a {
     font-size: 0.8rem;
+     padding: 4px;
   }
 
   article {
     font-size: 0.9rem;
   }
+
+  nav li {
+    margin-left: 10px;
+  }
+  
 }
 
